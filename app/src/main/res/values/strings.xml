@@ -3,7 +3,7 @@
     <string name="show_dialog_one">Show Dialog One</string>
     <string name="show_dialog_two">Show Dialog Two</string>
     <string name="dialog_one">Dialog One</string>
-    <string name="dialog_one_text">Here is a story all about how, my dialog showed. The end</string>
+    <string name="dialog_one_text">Here is a story all about how, my dialog showed. The end. Bet you can\'t leave by pressing out the window</string>
     <string name="dialog_one_button_one">Cool Story</string>
     <string name="dialog_two">Dialog Two</string>
     <string name="dialog_two_text">What\'s better, Cats or Dogs?</string>
@@ -11,4 +11,7 @@
     <string name="dialog_two_button_two">Dogs</string>
     <string name="toast_one">Correct, Cat\'s are great</string>
     <string name="toast_two">Correct, Dogs\'s are great</string>
+    <string name="show_dialog_three">Show Dialog Three</string>
+    <string name="demo_three_title">There\'s nothing here Jim</string>
+    <string name="demo_three_text">Good thing you can click the edge to get out!</string>
 </resources>
