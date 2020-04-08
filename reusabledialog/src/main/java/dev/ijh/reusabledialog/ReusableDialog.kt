@@ -92,7 +92,7 @@ class ReusableDialog : DialogFragment(){
 
         /**
          * Switch to allow the user to exit dialog by hitting the back button or click off the dialog area
-         * @param isCancelable            - True = Allowed to Cancel, False = Unable to Cancel
+         * @param isCancelable - True = Allowed to Cancel, False = Unable to Cancel
          */
         fun dialogCancelable(isCancelable: Boolean) {
             edgeClickDisabled = isCancelable
@@ -100,10 +100,10 @@ class ReusableDialog : DialogFragment(){
 
         /**
          * General construct for RegisterButton
-         * @param buttonTitle            - The Button Title
+         * @param buttonTitle          - The Button Title
+         * @param buttonBackground     - The button background color: R.color or android.R.color work
+         * @param textColor            - The button text color: R.color or android.R.color work
          * @param dialogButtonListener - The button onClickListener
-         * @param buttonBackground               - The button background color: R.color or android.R.color work
-         * @param textColor              - The button text color: R.color or android.R.color work
          */
         fun registerButton(buttonTitle: String, buttonBackground: Int, textColor: Int, dialogButtonListener: ReusableDialogListener) {
             dialogButtons.add(ReusableDialogButtonData(buttonTitle, buttonBackground, textColor, dialogButtonListener))
@@ -113,7 +113,6 @@ class ReusableDialog : DialogFragment(){
          * Create ReusableDialog instance
          * @param title    - The dialog title
          * @param infoText - The dialog Content message
-         * @param data     - the dialog buttons Array [ReusableDialogButtonData]
          * @return the ReusableDialog instance
          */
         fun createDialogInstance(title: String?,
