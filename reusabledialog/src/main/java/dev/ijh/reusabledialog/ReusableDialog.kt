@@ -29,7 +29,7 @@ class ReusableDialog : DialogFragment(){
     override fun onResume() {
         super.onResume()
         dialog?.window?.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT)
-        dialog.setOnCancelListener {
+        dialog?.setOnCancelListener {
             dialogButtons.clear()
         }
     }
