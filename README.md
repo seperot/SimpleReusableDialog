@@ -30,11 +30,13 @@ true = they can cancel, false = they cannot cancel
 This also works for the back button
 
 #### createDialogInstance
-Calls the dialog and shows it to the user, grabs any regisered buttons and checks if the dialog is cancelble or not then displays. Has two fields
+Calls the dialog and shows it to the user, grabs any registered buttons and checks if the dialog is cancelable or not then displays. Has two fields
 
 title: The dialog title
 
 infoText: The dialog content
+
+topIcon: The icon at the top of the Dialog, set as null to remove from Dialog
 
 Be sure to add
 

@@ -14,6 +14,7 @@ class ReusableDialog : DialogFragment(){
 
     private var title: String? = null
     private var infoText: String? = null
+    private var topIcon: Int? = null
     private var dialogButtonsData: ArrayList<ReusableDialogButtonData>? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -37,7 +38,13 @@ class ReusableDialog : DialogFragment(){
     private fun setText() {
         tvDialogTitle?.text = title
         tvDialogMain?.text = infoText
+        topIcon?.let {
+            ivDialogIcon.setImageResource(it)
+        } ?: run {
+            ivDialogIcon.visibility = View.GONE
+        }
     }
+
 
     private fun buttonParams(): LinearLayout.LayoutParams {
         val params = LinearLayout.LayoutParams(
@@ -113,15 +120,17 @@ class ReusableDialog : DialogFragment(){
          * Create ReusableDialog instance
          * @param title    - The dialog title
          * @param infoText - The dialog Content message
+         * @param topIcon  - The icon at the top of the Dialog, set as null to not have one shown
          * @return the ReusableDialog instance
          */
         fun createDialogInstance(title: String?,
-                                 infoText: String?): ReusableDialog {
+                                 infoText: String?, topIcon: Int?): ReusableDialog {
             val dialog = ReusableDialog()
             val args = Bundle()
             dialog.title = title
             dialog.infoText = infoText
             dialog.arguments = args
+            dialog.topIcon = topIcon
             dialog.isCancelable = edgeClickDisabled
             dialog.dialogButtonsData = dialogButtons
             return dialog

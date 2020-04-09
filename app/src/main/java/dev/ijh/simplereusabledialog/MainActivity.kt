@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
             ReusableDialog.dialogCancelable(false)
 
-            ReusableDialog.createDialogInstance(getString(R.string.dialog_one), getString(R.string.dialog_one_text)).show(
+            ReusableDialog.createDialogInstance(getString(R.string.dialog_one), getString(R.string.dialog_one_text), null).show(
                 supportFragmentManager, null
             )
         }
@@ -64,7 +64,8 @@ class MainActivity : AppCompatActivity() {
 
             ReusableDialog.createDialogInstance(
                 getString(R.string.dialog_two),
-                getString(R.string.dialog_two_text)
+                getString(R.string.dialog_two_text),
+                R.drawable.pupcat
             ).show(
                 supportFragmentManager, null
             )
@@ -73,7 +74,8 @@ class MainActivity : AppCompatActivity() {
         btndemo3.setOnClickListener {
             ReusableDialog.createDialogInstance(
                 getString(R.string.demo_three_title),
-                getString(R.string.demo_three_text)
+                getString(R.string.demo_three_text),
+                android.R.drawable.ic_dialog_alert
             ).show(
                 supportFragmentManager, null
             )
