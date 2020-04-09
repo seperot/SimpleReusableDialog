@@ -10,9 +10,13 @@ If you check the [Main Activity](app/src/main/java/dev/ijh/simplereusabledialog/
 
 #### registerButton
 RegisterButton adds a button to the next time you call createDialogInstance it has four parts
+
 buttonTitle: The text the button shows
+
 buttonBackground: The button background color, things like R.color or android.R.color work
+
 textColor: The button text color, again things like R.color or android.R.color work
+
 dialogButtonListener: The button onClickListener, this has to be called in the following format currently until I can figure out how to make it look nicer
 
 ` object : ReusableDialogListener {
@@ -27,13 +31,16 @@ This also works for the back button
 
 #### createDialogInstance
 Calls the dialog and shows it to the user, grabs any regisered buttons and checks if the dialog is cancelble or not then displays. Has two fields
+
 title: The dialog title
-nfoText: The dialog content
-also needs a
+
+infoText: The dialog content
+
+Be sure to add
 
 `.show(supportFragmentManager, null)`
 
-At the end to display
+At the end to display the dialog
 
 ### Planned features
 * Add a setting for custom button margin
