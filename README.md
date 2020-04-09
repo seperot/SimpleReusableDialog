@@ -47,5 +47,4 @@ At the end to display the dialog
 ### Planned features
 * Add a setting for custom button margin
 * Add a setting for custom button padding 
-* Add Icon option at the top
 * Add set dialog size and scroll    
