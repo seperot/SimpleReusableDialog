@@ -3,7 +3,7 @@
 A simple reusable dialog that allows custom buttons, all with native Android/Kotlin
 
 ### Latest Version
-`implementation 'com.github.seperot:SimpleReusableDialog:1.4'`
+`implementation 'com.github.seperot:SimpleReusableDialog:1.5'`
 
 ### Hows it work?
 If you check the [Main Activity](app/src/main/java/dev/ijh/simplereusabledialog/MainActivity.kt) you can see some examples of it working but to explain the main parts
